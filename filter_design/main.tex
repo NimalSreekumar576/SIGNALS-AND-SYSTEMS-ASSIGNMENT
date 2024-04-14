@@ -380,13 +380,13 @@ A Band-Pass Filter (BPF) can be obtained by subtracting the magnitude response o
 \end{align}
 \begin{align}
      \frac{\sin(\omega_{p2} n)}{n\pi} -\frac{\sin\brak{\omega_{p1}n}}{n\pi} &= 2\cos{\brak{\frac{\omega_{p2}n+\omega_{p1}n}{2}}}\sin{\brak{\frac{\omega_{p2}n-\omega_{p1}n}{2}}}\\
-            &= \frac{2\cos{\brak{0.291n\pi}}\sin{\brak{0.050n\pi}}}{n\pi}
+            &= \frac{2\cos{\brak{0.291n\pi}}\sin{\brak{0.025n\pi}}}{n\pi}
 \end{align}
 Multipying by window function we get :
 \begin{align}
     h_{BP}\brak{n} = 
 \begin{cases} 
-   \frac{2\cos{\brak{0.291n\pi}}\sin{\brak{0.050n\pi}}}{n\pi},  & \text{for } -48\leq n \leq 48 \\
+   \frac{2\cos{\brak{0.291n\pi}}\sin{\brak{0.025n\pi}}}{n\pi},  & \text{for } -48\leq n \leq 48 \\
     0 &\text{otherwise}
 \end{cases} \label{eq:h(n)desired_for_LPF}
 \end{align}
